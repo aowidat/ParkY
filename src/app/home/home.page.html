@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-title>QR-Code Oder Parkpplatz Suchen</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-buttons>
+    <ion-button [routerLink]="['/', 'qrcode']" detail="true">QR-Code</ion-button>
+  </ion-buttons>
+  <ion-label>Oder</ion-label>
+  <ion-buttons>
+    <ion-button [routerLink]="['/', 'map']" detail="true">Parkplatz Finden</ion-button>
+  </ion-buttons>
 </ion-content>

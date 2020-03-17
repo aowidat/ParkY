@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>signin</ion-title>
+    <ion-title>Anmelden</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <ion-label>Benutzer</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label>Kennwort</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+  <ion-label>Kein Konto noch? <p [routerLink]="['/', 'signup']" detail="true">Regestieren</p></ion-label>
 
+  <ion-buttons>
+    <ion-button>Anmelden</ion-button>
+  </ion-buttons>
 </ion-content>
